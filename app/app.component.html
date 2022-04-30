@@ -1,0 +1,10 @@
+<h1 id="setColor">FED Assignment2 : Passing data between components, Components styles</h1>
+
+<h2 id="songColor">Total number of songs : {{message.length}} </h2>
+
+<hr>
+<app-song-list (event)="receiveMessage($event)"></app-song-list>
+
+<app-my-playlist [data]="message1" ></app-my-playlist>
+
+

@@ -1,0 +1,17 @@
+<!-- <p>song-list works!</p> -->
+
+<h2 id="addColor">Add songs to your playlist</h2>
+
+<div *ngFor ="let song of songList">
+    <input type="checkbox" [(ngModel)]="song.isChecked" [(ngModel)]="song.chosen">
+    <label> {{song.name}} </label><br><br>
+</div>
+
+<button type="button" id="playlist_button" value="Add to playlist" (click)="addPlaylist()" [disabled]="buttonState()">Add to playlist</button><br>
+
+<label style="color:#8d36d9">Enter new song :</label>
+<input type="text" id="song" placeholder="newsong" [(ngModel)]="songName">
+<button type="button" value="Add Song" (click)="addSong()">Add Song</button>
+
+<hr>
+

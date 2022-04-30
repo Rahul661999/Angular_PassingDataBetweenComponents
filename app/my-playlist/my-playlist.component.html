@@ -1,0 +1,6 @@
+<!-- <p>my-playlist works!</p> -->
+
+<h2 id="textColor">My Playlist</h2>
+<div *ngFor ="let song of data">
+    <label style="color:#8d36d9" *ngIf="song.isChecked"> {{song.name}} </label><br><br>
+</div>
